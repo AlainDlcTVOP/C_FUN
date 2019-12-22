@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void grapgh(int count);
+void graph(int count, char a) ;
 int main(int argc, char const *argv[])
 {
     int value;
@@ -8,19 +8,19 @@ int main(int argc, char const *argv[])
     value = 2;
     while (value <= 464)
     {
-        grapgh(value);
+        graph(value, '*');
         printf("Value is %d\n", value);
         value = value * 2;
     }
 
     return 0;
 }
-void grapgh(int count)
+void graph(int count, char ch)
 {
     int x = 0;
     for (; x < count; x++)
     {
-        putchar('*');
-        putchar('\t');
+       
+        putchar(ch);
     }
 }
