@@ -3,5 +3,8 @@
         
         "terminal.foreground" : "#00FD61",
        
+    },
+    "files.associations": {
+        "stdlib.h": "c"
     }
   }
