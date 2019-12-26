@@ -1,15 +1,16 @@
-# include <stdio.h>
-# include <string.h>
+#include <stdio.h>
+#include <string.h>
 int main(int argc, char const *argv[])
 {
     char first[40];
-    char last[20];
+    char last[50];
 
     printf("What is your first name ? ");
     scanf("%s", first);
-     printf("What is your last name ? ");
+    printf("What is your last name ? ");
     scanf("%s", last);
-    strcat(first,last);
+    strcat(first, " ");
+    strcat(first, last);
     printf("Please to meet you, %s!\n", first);
     return 0;
 }
